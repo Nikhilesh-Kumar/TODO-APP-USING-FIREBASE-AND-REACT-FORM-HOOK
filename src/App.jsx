@@ -54,7 +54,7 @@ function App() {
       <form action="" onSubmit={handleSubmit(submitTask)}>
         <div className="w-[320px] border border-neutral-300 shadow-md mx-auto mt-8 p-4 rounded-lg">
           <input {...register('inputTask')} className="w-full border border-neutral-200 rounded-lg px-3 py-2 text-sm outline-none" type="text" placeholder="Enter Task To Save" />
-          <input className="items-center bg-black text-white rounded-lg px-2 py-1 mt-2" type="submit" value="Save Task" />
+          <input className="items-center bg-black text-white rounded-lg px-2 py-1 mt-3" type="submit" value="Save Task" />
         </div>
       </form>
 
