@@ -18,9 +18,9 @@ function Card({title, deleteHandler, id}) {
     <>
         <form action="" onSubmit={handleSubmit(deleteTask)}>
           <div className='w-[320px] border border-neutral-400 px-4 py-1 mb-1 mx-auto rounded-lg hover:shadow-lg'>
-            <div className="flex items-center justify-between">
-              <p>{title}</p>
-              <button type='submit' className='text-neutral-500 hover:text-red-700' type="submit">{deleteStatus ? <Loader/> : <CiTrash />}</button>
+            <div className="flex items-center justify-between cursor-pointer">
+              <p className='text-sm'>{title}</p>
+              <button type='submit' className='text-neutral-500 hover:text-red-700 cursor-pointer' type="submit">{deleteStatus ? <Loader/> : <CiTrash />}</button>
             </div>
           </div>
         </form>
